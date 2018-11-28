@@ -107,4 +107,13 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
+client.on('message', msg => {
+  if (msg.content === 'com') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
+
+
+
 client.login(process.env.BOT_TOKEN);
