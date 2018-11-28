@@ -84,6 +84,36 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'com') {
+    msg.reply(':warning: Reklam Yapma! :warning:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'net') {
+    msg.reply(':warning: Reklam Yapma! :warning:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'https') {
+    msg.reply(':warning: Reklam Yapma! :warning:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'www.') {
+    msg.reply(':warning: Reklam Yapma! :warning:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'www') {
+    msg.reply(':warning: Reklam Yapma! :warning:');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
