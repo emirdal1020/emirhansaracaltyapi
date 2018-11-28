@@ -1,10 +1,10 @@
 ﻿bot.on('guildMemberAdd', member => {
   let guild = member.guild;
   let joinRole = guild.roles.find('name', 'Üye');//
-  member.sendMessage("Sunucuya Hoşgeldin Kardeşim **Destek Sunucuma Katılmak İçin** https://discord.gg/CQef5k5")//Sunucuya Yeni Biri Geldiğinde Mesaj Atar istediğini yaz.
+  member.sendMessage("Sunucuya Hoşgeldin Kardeşim İnşallah eğlenirsin sunucumuzda.")
   member.addRole(joinRole);
 
-  const channel = member.guild.channels.find('name', 'gelen-giden');// 'gelen-giden' log ismidir. değiştirebilirsiniz. belirttiğiniz isme giriş çıkış gösterecektir.
+  const channel = member.guild.channels.find('name', 'gelen-giden');
   if (!channel) return;
   const embed = new Discord.RichEmbed()
   .setColor('0x00cc44')
