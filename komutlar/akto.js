@@ -3,7 +3,7 @@
 
 exports.run = function(client, message) {
 message.channel.bulkDelete(500);
-message.channel.send("500 mesaj sildim").then(msg => {
+message.channel.send("500 tane mesaj başarıyla sildim :heavy_check_mark:").then(msg => {
 	msg.delete(500)
 })
 
