@@ -106,16 +106,5 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
-if (msg.content === 'k-espri') {
- if (Math.floor((Math.random () * 3) + 1) === 1); {
-   msg.channel.send('Adamın 1'i varmış 2. dönem düzeltmiş') {
-}else if (Math.floor((Math.random () * 3) + 1) === 2);
-    msg.channel.send('En Çok Arabası Olan ülke Nedir Tabiki Kars :)') {
-}else if (Math.floor((Math.random () * 3) + 1) === 3);
-   msg.channel.send('Yağmur yağmış kar peynir')
-  }
-}
-
-});
 
 client.login(process.env.BOT_TOKEN);
