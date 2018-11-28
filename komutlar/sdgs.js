@@ -13,7 +13,7 @@ exports.run = async (client, message) => {
         }
     });
 
-    let bitiş = (Math.random() * (65 - 5 +1)) + 5;
+    let bitiş = (Math.random() * (60 - 5 +1)) + 5;
     setTimeout(() => {
         dönme.edit({
             embed: {
