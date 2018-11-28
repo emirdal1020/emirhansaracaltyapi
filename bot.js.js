@@ -114,6 +114,53 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'discord.gg') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
 
+client.on('message', msg => {
+  if (msg.content === 'http') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'https') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'www.') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'www') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'channe') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'channel') {
+   msg.delete(30)
+    msg.reply('Reklam Yapmassan Sevinirim :heart:');
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
