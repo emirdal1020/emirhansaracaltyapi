@@ -20,15 +20,15 @@ client.on('message', msg => {
     msg.reply('Pong! **' + client.ping + '** ms');
   }
   if (msg.content.toLowerCase() === prefix + 'sa') {
-    msg.reply('Aleyküm selam!');
+    msg.reply('As Kanki');
   }
   if (msg.content.toLowerCase() === prefix + 'yaz') {
     msg.delete();
     msg.channel.sendMessage(msg.content);
   }
   if (msg.content.toLowerCase() === prefix + 'temizle') {
-    msg.channel.bulkDelete(100);
-    msg.channel.sendMessage("100 adet mesaj silindi! (Emirhan Saraç)");
+    msg.channel.bulkDelete(500);
+    msg.channel.sendMessage("500 adet mesaj silindi! (Emirhan Saraç)");
   }
   if (msg.content.toLowerCase() === prefix + 'reboot') {
     if (msg.author.id !== ayarlar.sahip) {
