@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
@@ -80,7 +80,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm Selam Kanki');
+    msg.reply('Aleyküm selam,  hoş geldin ^^');
   }
 });
 
@@ -107,61 +107,4 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.on('message', msg => {
-  if (msg.content === 'com') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'discord.gg') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'http') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'https') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'www.') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'www') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'channe') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'channel') {
-   msg.delete(30)
-    msg.reply('Reklam Yapmassan Sevinirim :heart:');
-  }
-});
-
-
-bot.login(process.env.TOKEN);
+client.login(process.env.BOT_TOKEN);
